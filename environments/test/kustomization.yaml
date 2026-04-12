@@ -6,3 +6,5 @@ images:
 - name: ghcr.io/nginx/nginx
   newName: ghcr.io/nginx/nginx
   newTag: 1.29.0
+- name: not-valid-image-at-all!!!
+  newName: not-valid-image-at-all!!!
