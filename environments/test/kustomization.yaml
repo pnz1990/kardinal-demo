@@ -6,3 +6,6 @@ images:
 - name: ghcr.io/nginx/nginx
   newName: ghcr.io/nginx/nginx
   newTag: 1.29.0
+- name: ghcr.io/pnz1990/kardinal-test-app
+  newName: ghcr.io/pnz1990/kardinal-test-app
+  newTag: sha-9349a3f-v4
