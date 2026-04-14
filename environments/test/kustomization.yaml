@@ -5,4 +5,4 @@ resources:
 images:
 - name: ghcr.io/pnz1990/kardinal-test-app
   newName: ghcr.io/pnz1990/kardinal-test-app
-  newTag: sha-9349a3f
+  newTag: sha-9349a3f-a
