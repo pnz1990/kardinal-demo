@@ -3,6 +3,6 @@ kind: Kustomization
 resources:
 - deployment.yaml
 images:
-- name: ghcr.io/nginx/nginx
-  newName: ghcr.io/nginx/nginx
-  newTag: 1.28.1
+- name: ghcr.io/pnz1990/kardinal-test-app
+  newName: ghcr.io/pnz1990/kardinal-test-app
+  newTag: sha-9349a3f
