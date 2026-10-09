@@ -5,5 +5,4 @@ resources:
 images:
 - name: ghcr.io/pnz1990/kardinal-test-app
   newName: ghcr.io/pnz1990/kardinal-test-app
-  newTag: sha-9349a3f
-  digest: sha256:51a7355fc6cb8928c89cef5bdf55a7e1ea9fe8be102beb718486338fc7286cd0
+  newTag: latest
