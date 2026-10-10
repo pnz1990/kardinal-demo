@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app.kubernetes.io/name: podinfo-prod
+  name: podinfo-prod
+  namespace: e2e-testcore-renderedbranchkustomize-78db21a5
+spec:
+  progressDeadlineSeconds: 60
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: podinfo-prod
+  template:
+    metadata:
+      annotations:
+        prometheus.io/port: "9898"
+        prometheus.io/scrape: "true"
+      labels:
+        app.kubernetes.io/name: podinfo-prod
+    spec:
+      containers:
+      - image: ghcr.io/stefanprodan/podinfo:6.14.1
+        name: podinfo
+        ports:
+        - containerPort: 9898
+          name: http
+        readinessProbe:
+          httpGet:
+            path: /readyz
+            port: 9898
+          periodSeconds: 2
+        resources:
+          requests:
+            cpu: 10m
+            memory: 16Mi
