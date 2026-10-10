@@ -1,0 +1,9 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: e2e-testcore-wavetopologyexample-7d3ae0c7
+resources:
+  - deployment.yaml
+  - service.yaml
+images:
+  - name: ghcr.io/stefanprodan/podinfo
+    newTag: 6.13.0
