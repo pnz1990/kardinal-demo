@@ -1,0 +1,6 @@
+# Written by kardinal-promoter for layout: branch. Do not edit: kardinal compares
+# the files below with their sha256 to find changes made outside a promotion.
+environment: prod
+files: {}
+namespace: e2e-testcore-renderedbranchkustomize-nodes-6a65f38f
+pipeline: podinfo
