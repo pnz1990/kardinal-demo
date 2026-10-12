@@ -1,0 +1,3 @@
+# Chart defaults. kardinal writes values-e2e.yaml.
+image:
+  tag: untouched
