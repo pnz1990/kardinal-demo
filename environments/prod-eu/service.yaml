@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: wave-demo-prod-eu
+  labels:
+    app.kubernetes.io/name: wave-demo-prod-eu
+spec:
+  selector:
+    app.kubernetes.io/name: wave-demo-prod-eu
+  ports:
+    - name: http
+      port: 9898
+      targetPort: http
