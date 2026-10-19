@@ -1,6 +1,12 @@
 # Written by kardinal-promoter for layout: branch. Do not edit: kardinal compares
 # the files below with their sha256 to find changes made outside a promotion.
+bundle: podinfo-r4l8k
+dryCommit: 2c2ee124db0f1b4066c92b4d09dc9a9ec8941d3c
+dryPath: environments/prod
 environment: prod
-files: {}
+files:
+  e2e-testcore-renderedbranchkustomize-compact-c5f95a39_deployment-podinfo-prod.yaml: 52be58ad31763975c7fbdfe00c2e806f011e1f8b20835193509cd911192935c7
+  e2e-testcore-renderedbranchkustomize-compact-c5f95a39_service-podinfo-prod.yaml: 544e38f51adababda04b02767ba30c3c3a82939508adba5c15b429bbe96cb041
 namespace: e2e-testcore-renderedbranchkustomize-compact-c5f95a39
 pipeline: podinfo
+renderer: kustomize
